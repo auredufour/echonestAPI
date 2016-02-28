@@ -42,7 +42,7 @@ app.displayPlaylist = function(filteredSongDetails, data) {
             var spotify = songDetails.tracks[0].foreign_id;
             var spotifyID = spotify.toString().replace("spotify:track:", "");
                 songIDs.push(spotifyID);
-            var logo = $('<img>').attr('src', '../images/logo.svg')
+            var logo = $('<img>').attr('src', '../images/logo2.svg')
             var song = $('<h3>').text(songDetails.title)
             var songArtist = $('<h4>').text(songDetails.artist_name);
             var songTitle = $('<div>').append(logo, songArtist).addClass('songTitle');
